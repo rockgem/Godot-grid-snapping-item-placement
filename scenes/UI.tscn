@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://actors/Slot.tscn" type="PackedScene" id=1]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 23.0
+margin_top = -43.7465
+margin_right = -26.0
+margin_bottom = -11.7465
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Slot" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 145.0
+margin_right = 177.0
+margin_bottom = 32.0
+item_name = "plant_1"
+
+[node name="Slot2" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 181.0
+margin_right = 213.0
+margin_bottom = 32.0
+item_name = "plant_2"
+
+[node name="Slot3" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 217.0
+margin_right = 249.0
+margin_bottom = 32.0
+item_name = "lamp_1"
+
+[node name="Slot4" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 253.0
+margin_right = 285.0
+margin_bottom = 32.0
+item_name = "lamp_2"
